@@ -1,0 +1,14 @@
+.agree_btn{
+    width: 20%;
+    margin: auto;
+
+}
+.agree_btn button{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(53, 167, 133);
+    color: white;
+    cursor: pointer;
+}
