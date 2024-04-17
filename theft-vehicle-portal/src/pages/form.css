@@ -1,5 +1,5 @@
 .main_container_forms {
-    width: 90%;
+    width: 100%;
     margin: auto;
     /* border: 2px solid green; */
     display: grid;
@@ -11,15 +11,57 @@
 
 .form1{
     padding: 10px;
-    /* width: 100%; */
-    border: 1px solid rgba(195, 195, 191, 0.878);
+    width: 100%;
+    border: 1px solid rgba(239, 239, 238, 0.935);
 }
-.form2 {
-    padding: 10px;
-    /* width: 100%; */
-    border: 1px solid rgb(220, 220, 216);
-}
+
 .label_form{
     /* color: red; */
     font-size: 100px;
+}
+.model_msg{
+    height: 300px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+.model_msg h1{
+    margin-bottom: 1px;
+    font-size: 30px;
+    color: RGB(43 106 193);
+}
+.model_msgp{
+    height: 3px;
+    margin-top: 0px;
+    background-color: RGB(43 106 193);
+}
+.model_msg p{
+    font-size: 18px;
+    margin:15px 0px;
+    text-align: center;
+}
+.model_msg input{
+    width:200px;
+    margin: 10px 0px;
+}
+.model_msg button{
+    padding: 10px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 20px;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    background-color:rgb(53, 167, 133);
+}
+.model_msg button:hover{
+    cursor: pointer;
+    background-color: palevioletred;
+}
+.data_delete p{
+
+    color: RGB(43 106 193);
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
 }

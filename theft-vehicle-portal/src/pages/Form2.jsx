@@ -6,7 +6,7 @@ import { FormControl, FormLabel, Input, Select } from "@chakra-ui/react";
 import { Button, Stack, Flex, InputGroup, InputLeftAddon, Checkbox } from '@chakra-ui/react';
 import { Modal } from 'antd';
 
-const FormComponent2 = () => {
+const FormComponent = () => {
     const [formData, setFormData] = useState({
         mobile: '',
         email: '',
@@ -142,9 +142,12 @@ const FormComponent2 = () => {
             </Modal>
             <div className='main_container_forms'>
                 <div className='form1'>
+                    <p>Address</p>
                     <Stack spacing={2}>
+                        <p>Address</p>
                         <FormControl isRequired>
                             <FormLabel>लिंग</FormLabel>
+                            <p>hello</p>
                             <Select placeholder='small size' size='sm'>
                                 <option value='option1'>Option 1</option>
                                 <option value='option2'>Option 2</option>
@@ -223,7 +226,7 @@ const FormComponent2 = () => {
                             </FormControl>
                             <Button style={{ marginTop: "32px" }} colorScheme='blue' width="100px" size='sm' onClick={showModal}>सत्यापित करें</Button>
                         </Stack>
-                            {formErrors.mobile && <div style={{color:"red"}}>{formErrors.mobile}</div>}
+                        {formErrors.mobile && <div style={{ color: "red" }}>{formErrors.mobile}</div>}
                         <FormControl style={{ width: "380px" }}>
                             <FormLabel>
                                 लैंडलाइन नंबर
@@ -331,4 +334,4 @@ const FormComponent2 = () => {
     )
 }
 
-export default FormComponent2;
+export default FormComponent;

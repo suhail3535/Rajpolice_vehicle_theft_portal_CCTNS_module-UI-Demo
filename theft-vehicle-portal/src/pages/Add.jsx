@@ -1,9 +1,14 @@
 import React from 'react'
+import "./user.css"
 
+
+import FormComponent2 from './Form';
 const Add = () => {
   return (
-    <div>
-      Lorem ipsum dolor sit amet.
+    <div className = 'huminfo_div'>
+
+      <FormComponent2 />
+
     </div>
   )
 }

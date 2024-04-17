@@ -12,7 +12,7 @@
     color: white;
     cursor: pointer;
 }
-.main_container{
-    /* border: 2px solid red; */
-
+p{
+    margin-top: 10px;
+    text-align: justify;
 }
