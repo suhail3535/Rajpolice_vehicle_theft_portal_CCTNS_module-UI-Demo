@@ -19,7 +19,7 @@ const UsercompTabs = () => {
                 <TabList style={{position:"sticky",top:"0"}} >
                     <Tab
                         color="white"
-                        // margin="8px"
+                        
                         marginRight="4px"
                         padding="3px 5px"
 
@@ -58,16 +58,22 @@ const UsercompTabs = () => {
                     </Tab>
 
                 </TabList>
-                <hr style={{ margin: "10px", width: "100" }} />
+                <hr style={{marginTop:"10px"}}/>
                 <TabPanels>
                     <TabPanel>
-                        <Humeninfo />
+                        <div className="scrollable-content">
+                            <Humeninfo />
+                        </div>
                     </TabPanel>
                     <TabPanel>
-                        <Add />
+                        <div className="scrollable-content">
+                            <Add />
+                        </div>
                     </TabPanel>
                     <TabPanel>
-                        <ExtraInfo />
+                        <div className="scrollable-content">
+                            <ExtraInfo />
+                        </div>
                     </TabPanel>
 
                 </TabPanels>

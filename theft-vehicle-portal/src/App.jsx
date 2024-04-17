@@ -4,7 +4,7 @@ import Navbar from './component/navbar/Navbar'
 
 import MainRoutes from './MainRoutes'
 
-
+import "./App.css"
 const App = () => {
   return (
     <div>
