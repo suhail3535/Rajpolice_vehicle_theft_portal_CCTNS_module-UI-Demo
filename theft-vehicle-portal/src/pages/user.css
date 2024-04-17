@@ -1,0 +1,27 @@
+/* user.css */
+.huminfo_div {
+    height: 500px;
+    overflow-y: scroll;
+    /* Add this line to enable vertical scrollbar */
+    width: 100%;
+    border: 1px solid gray;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.first_div {
+    border: 1px solid green;
+    height: auto;
+    width: 50%;
+}
+
+.second_div {
+    border: 1px solid rgb(0, 9, 128);
+    width: 50%;
+    height: auto;
+}
+.tab_view{
+    border: 5px solid green;
+}

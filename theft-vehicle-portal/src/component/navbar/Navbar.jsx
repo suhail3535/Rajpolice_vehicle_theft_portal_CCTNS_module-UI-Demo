@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
     return (
         <>
-
+            <div className='main_nav_cont'>
         <div className='nav_cont'>
             <div className=' first_logo_div'>
                     <Link to={"/"}>
@@ -32,7 +32,10 @@ const Navbar = () => {
                 </div>
             </div>
             </div>
-            <Bar />
+                <div className='ruler_bar'>
+
+                </div>
+            </div>
         </>
 
     )

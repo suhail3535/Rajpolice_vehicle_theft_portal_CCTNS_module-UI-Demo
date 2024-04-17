@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Modal } from 'antd';
 import "./reg.css"
-import Sidebar from './Sidebar';
+
+import SidebarWithHeader from './UserSidebar';
+import SimpleSidebar from './UserSidebar';
 const Registration = () => {
     const [modalVisible, setModalVisible] = useState(false);
 
@@ -20,7 +22,7 @@ const Registration = () => {
     }
 
     return (
-        <div>
+        <div className='main_container'>
             <Modal
                 title={<div style={{ textAlign: 'center', color: "rgb(0,51,153)", fontSize: "20px", fontWeight: "bold" }}>Disclaimer<hr style={{ margin: '5px auto', width: '95%', height: "2px", backgroundColor: " rgb(0, 51, 153)" }} /></div>}
                 centered
@@ -48,7 +50,7 @@ const Registration = () => {
                 </div>
             </Modal>
 
-            <Sidebar />
+            <SimpleSidebar />
         </div>
     );
 }
