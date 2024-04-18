@@ -29,7 +29,16 @@
             color: white;
             /* padding: 2px; */
 }
-
+/* .add{
+    padding: 10px 50px;
+    text-align: left;
+}
+.firsttfh{
+padding: 14px;
+} */
+.tableinfo{
+    width: 100%;
+}
 .table {
     border-radius: 5px;
     border-collapse: separate;
@@ -37,6 +46,7 @@
     padding: 10px;
     margin: auto;
     width: 100%;
+        /* background-color: rgb(43, 106, 193); */
 }
 .table>thead>tr>th{
     background-color: blue;

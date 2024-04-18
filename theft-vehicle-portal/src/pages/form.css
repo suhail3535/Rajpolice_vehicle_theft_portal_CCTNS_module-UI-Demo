@@ -8,7 +8,13 @@
     padding: 10px;
     grid-template-columns: repeat(2, 1fr);
 }
-
+.reset_frm_btn{
+    width:13%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    float: right;
+}
 .form1{
     padding: 10px;
     width: 100%;

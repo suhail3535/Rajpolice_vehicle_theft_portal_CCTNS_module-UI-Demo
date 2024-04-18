@@ -6,10 +6,11 @@ import { FormControl, FormLabel, Input, Select } from "@chakra-ui/react";
 import { Button, Stack, Flex, InputGroup, InputLeftAddon, Checkbox } from '@chakra-ui/react';
 import { Modal } from 'antd';
 
-const FormComponent2 = () => {
+const FormComponent = () => {
     const [formData, setFormData] = useState({
         mobile: '',
         email: '',
+        upnam:''
     });
     const [formErrors, setFormErrors] = useState({});
 
@@ -145,10 +146,14 @@ const FormComponent2 = () => {
                     <Stack spacing={2}>
                         <FormControl isRequired>
                             <FormLabel>लिंग</FormLabel>
-                            <Select placeholder='small size' size='sm'>
-                                <option value='option1'>Option 1</option>
-                                <option value='option2'>Option 2</option>
-                                <option value='option3'>Option 3</option>
+                            <Select placeholder='-----चयन-----' size='sm'>
+                                <option value="">-----चयन-----</option>
+                                <option value="">अज्ञात</option>
+                                <option value="">पुरुष</option>
+                                <option value="">महिला</option>
+                                <option value="">
+                                    हिजड़ा/किन्&zwj;नर
+                                </option>
                             </Select>
                         </FormControl>
                         <FormControl isRequired>
@@ -198,10 +203,14 @@ const FormComponent2 = () => {
                     <Stack spacing={2}>
                         <FormControl isRequired>
                             <FormLabel>वैवाहिक स्थिति</FormLabel>
-                            <Select placeholder='small size' size='sm'>
-                                <option value='option1'>Option 1</option>
-                                <option value='option2'>Option 2</option>
-                                <option value='option3'>Option 3</option>
+                            <Select placeholder='-----चयन-----' size='sm'>
+                                {/* <option value="">-----चयन-----</option> */}
+                                <option value="">अलग- अलग</option>
+                                <option value="">अविवाहित</option>
+                                <option value="">तलाकशुदा</option>
+                                <option value="">लिव इन रिलेशन</option>
+                                <option value="">विधवा</option>
+                                <option value="">विवाहित</option>
                             </Select>
                         </FormControl>
                         <Stack direction="row">
@@ -256,10 +265,13 @@ const FormComponent2 = () => {
                     <Stack spacing={2}>
                         <FormControl isRequired>
                             <FormLabel>संबंध प्रकार</FormLabel>
-                            <Select placeholder='small size' size='sm'>
-                                <option value='option1'>Option 1</option>
-                                <option value='option2'>Option 2</option>
-                                <option value='option3'>Option 3</option>
+                            <Select placeholder='-----चयन-----' size='sm'>
+                                <option value="">संबंध प्रकार</option>
+                                <option value="">अभिभावक</option>
+                                <option value="">पति</option>
+                                <option value="">पत्नी</option>
+                                <option value="">पिता</option>
+                                <option value="">मां</option>
                             </Select>
                         </FormControl>
                         <FormControl isRequired>
@@ -272,10 +284,16 @@ const FormComponent2 = () => {
                         </FormControl>
                         <FormControl isRequired>
                             <FormLabel>श्रेणी</FormLabel>
-                            <Select placeholder='small size' size='sm'>
-                                <option value='option1'>Option 1</option>
-                                <option value='option2'>Option 2</option>
-                                <option value='option3'>Option 3</option>
+                            <Select placeholder='-----चयन-----' size='sm'>
+                                {/* <option value="">-----चयन-----</option> */}
+                                <option value="">
+                                    अनुसूचित जनजाति
+                                </option>
+                                <option value="">अनुसूचित जाति</option>
+                                <option value="">
+                                    अन्य पिछड़ा वर्ग (ओबीसी)
+                                </option>
+                                <option value="">सामान्य</option>
                             </Select>
                         </FormControl>
                     </Stack>
@@ -331,4 +349,4 @@ const FormComponent2 = () => {
     )
 }
 
-export default FormComponent2;
+export default FormComponent;

@@ -1,13 +1,14 @@
 import React from 'react'
 import "./user.css"
+import AddressForm from './AddressForm'
 
 
-import FormComponent2 from './Form';
+
 const Add = () => {
   return (
     <div className = 'huminfo_div'>
+      <AddressForm/>
 
-      <FormComponent2 />
 
     </div>
   )
