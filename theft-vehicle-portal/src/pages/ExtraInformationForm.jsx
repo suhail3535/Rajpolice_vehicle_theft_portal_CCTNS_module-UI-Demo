@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import "./form.css"
 import "./table.css"
 import {
@@ -153,7 +153,7 @@ const ExtraInfoRorm = () => {
                             ]}
                         >
                             <Select
-                                placeholder="----चयन----"
+                                placeholder="भारत"
                                 onChange={value => handleInputChange('राष्ट्रीयता हेतु देश', value)}
                                 // onChange={onGenderChange}
                                 allowClear
