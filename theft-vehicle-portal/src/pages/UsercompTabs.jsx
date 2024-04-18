@@ -19,9 +19,10 @@ const UsercompTabs = () => {
                 <TabList style={{position:"sticky",top:"0"}} >
                     <Tab
                         color="white"
-                        
+
                         marginRight="4px"
                         padding="3px 5px"
+                        _hover={{ bg: "RGB(53 167 133)" }}
 
                         bg="rgb(0,51,153)"
                         _selected={{ bg: selectedTab === 0 ? 'rgb(243,180,70)' : 'rgb(0,51,153)', color: 'white' }}
@@ -34,6 +35,8 @@ const UsercompTabs = () => {
                         marginRight="4px"
                         padding="3px 5px"
                         bg="rgb(0,51,153)"
+                        _hover={{ bg: "RGB(53 167 133)" }}
+
                         color="white"
 
                         _selected={{ bg: selectedTab === 1 ? 'rgb(243,180,70)' : 'rgb(0,51,153)', color: 'white' }}
@@ -49,6 +52,7 @@ const UsercompTabs = () => {
 
                         bg="rgb(0,51,153)"
                         color="white"
+                        _hover={{ bg: "RGB(53 167 133)" }}
 
                         _selected={{ bg: selectedTab === 2 ? 'rgb(243,180,70)' : 'rgb(0,51,153)', color: 'white' }}
                         onClick={() => handleTabChange(2)}
