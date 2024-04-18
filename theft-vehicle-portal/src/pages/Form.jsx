@@ -145,7 +145,7 @@ const FormComponent = () => {
                 <div className='form1'>
                     <Stack spacing={2}>
                         <FormControl isRequired>
-                            <FormLabel>लिंग</FormLabel>
+                            <FormLabel style={{ marginBottom: "0px",fontSize:"15px" }}>लिंग</FormLabel>
                             <Select placeholder='-----चयन-----' size='sm'>
                                 <option value="">-----चयन-----</option>
                                 <option value="">अज्ञात</option>
@@ -157,20 +157,20 @@ const FormComponent = () => {
                             </Select>
                         </FormControl>
                         <FormControl isRequired>
-                            <FormLabel>प्रथम नाम</FormLabel>
+                            <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>प्रथम नाम</FormLabel>
                             <Input placeholder='First name' size='sm' />
                         </FormControl>
                         <FormControl>
-                            <FormLabel>मध्य नाम</FormLabel>
+                            <FormLabel  style={{marginBottom:"0px",fontSize:"15px"}}>मध्य नाम</FormLabel>
                             <Input placeholder='First name' size='sm' />
                         </FormControl>
                         <FormControl>
-                            <FormLabel>अंतिम नाम</FormLabel>
+                            <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>अंतिम नाम</FormLabel>
                             <Input placeholder='First name' size='sm' />
                         </FormControl>
                         <Stack direction="row">
                             <FormControl style={{ width: "420px" }}>
-                                <FormLabel>उपनाम</FormLabel>
+                                <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>उपनाम</FormLabel>
                                 <Input type="text" size="sm" value={upnam} onChange={(e) => setUpnam(e.target.value)} />
                             </FormControl>
                             <Button style={{ marginTop: "32px" }} colorScheme='blue' size='sm' onClick={handleAddUpnam}>सहेजे</Button>
@@ -202,7 +202,7 @@ const FormComponent = () => {
                 <div className='form1'>
                     <Stack spacing={2}>
                         <FormControl isRequired>
-                            <FormLabel>वैवाहिक स्थिति</FormLabel>
+                            <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>वैवाहिक स्थिति</FormLabel>
                             <Select placeholder='-----चयन-----' size='sm'>
                                 {/* <option value="">-----चयन-----</option> */}
                                 <option value="">अलग- अलग</option>
@@ -215,7 +215,7 @@ const FormComponent = () => {
                         </FormControl>
                         <Stack direction="row">
                             <FormControl style={{ width: "380px" }}>
-                                <FormLabel>
+                                <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>
                                     मोबाईल नंबर
                                 </FormLabel>
                                 <InputGroup size='sm'>
@@ -234,7 +234,7 @@ const FormComponent = () => {
                         </Stack>
                             {formErrors.mobile && <div style={{color:"red"}}>{formErrors.mobile}</div>}
                         <FormControl style={{ width: "380px" }}>
-                            <FormLabel>
+                            <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>
                                 लैंडलाइन नंबर
                             </FormLabel>
                             <InputGroup size='sm'>
@@ -244,7 +244,7 @@ const FormComponent = () => {
                         </FormControl>
                         <Stack direction="row">
                             <FormControl style={{ width: "380px" }}>
-                                <FormLabel>
+                                <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>
                                     ईमेल आईडी
                                 </FormLabel>
                                 <Input
@@ -264,7 +264,7 @@ const FormComponent = () => {
                 <div className='form1'>
                     <Stack spacing={2}>
                         <FormControl isRequired>
-                            <FormLabel>संबंध प्रकार</FormLabel>
+                            <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>संबंध प्रकार</FormLabel>
                             <Select placeholder='-----चयन-----' size='sm'>
                                 <option value="">संबंध प्रकार</option>
                                 <option value="">अभिभावक</option>
@@ -275,15 +275,15 @@ const FormComponent = () => {
                             </Select>
                         </FormControl>
                         <FormControl isRequired>
-                            <FormLabel>संबंधी का नाम</FormLabel>
+                            <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>संबंधी का नाम</FormLabel>
                             <Input placeholder='First name' size='sm' />
                         </FormControl>
                         <FormControl>
-                            <FormLabel>संबंधी का उपनाम</FormLabel>
+                            <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>संबंधी का उपनाम</FormLabel>
                             <Input placeholder='First name' size='sm' />
                         </FormControl>
                         <FormControl isRequired>
-                            <FormLabel>श्रेणी</FormLabel>
+                            <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>श्रेणी</FormLabel>
                             <Select placeholder='-----चयन-----' size='sm'>
                                 {/* <option value="">-----चयन-----</option> */}
                                 <option value="">
@@ -301,13 +301,13 @@ const FormComponent = () => {
                 <div className='form1'>
                     <Stack spacing={2}>
                         <FormControl isRequired>
-                            <FormLabel>
+                            <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>
                                 जन्म तिथि</FormLabel>
                             <Input placeholder='Select Date and Time' size='sm' type='datetime-local' />
                         </FormControl>
                         <Flex direction="row" width="270px" justifyContent="space-between" marginBottom={2}>
                             <FormControl style={{ width: "380px" }}>
-                                <FormLabel>आयु (वर्ष/महीना)</FormLabel>
+                                <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>आयु (वर्ष/महीना)</FormLabel>
                                 <Input htmlSize={4} width='auto' size="sm" />
                             </FormControl>
                             <FormControl style={{ width: "380px", marginTop: "31px" }}>
@@ -319,13 +319,13 @@ const FormComponent = () => {
 
 
                         <FormControl>
-                            <FormLabel>जन्म का वर्ष</FormLabel>
+                            <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>जन्म का वर्ष</FormLabel>
                             <Input placeholder='First name' size='sm' />
                         </FormControl>
 
                         <Flex direction="row" width="500px" justifyContent="space-between" marginBottom={2}>
                             <FormControl style={{ width: "450px" }}>
-                                <FormLabel>आयु सीमा(से - तक)</FormLabel>
+                                <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>आयु सीमा(से - तक)</FormLabel>
                                 <Input htmlSize={4} width='auto' size="sm" />
                             </FormControl>
                             <FormControl style={{ width: "380px", marginTop: "31px" }}>
