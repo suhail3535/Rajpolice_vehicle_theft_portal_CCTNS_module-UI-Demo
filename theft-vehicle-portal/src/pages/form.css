@@ -8,6 +8,10 @@
     padding: 10px;
     grid-template-columns: repeat(2, 1fr);
 }
+.main_container_forms_drawer{
+    display: flex;
+flex-direction: column;
+}
 .reset_frm_btn{
     width:13%;
     display: flex;

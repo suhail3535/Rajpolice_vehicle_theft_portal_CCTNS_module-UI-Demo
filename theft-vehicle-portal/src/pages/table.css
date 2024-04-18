@@ -23,19 +23,20 @@
     margin-top: 10px;
 }
 
-.detail_maindiv{
-    /* border: 1px solid green; */
-        background-color: rgb(43, 106, 193);
-            color: white;
-            /* padding: 2px; */
+
+.detail_maindiv table{
+    width:100%
 }
-/* .add{
-    padding: 10px 50px;
-    text-align: left;
+.detail_maindiv table thead{
+    color: white;
+    background-color: rgb(43, 106, 193);
+
 }
-.firsttfh{
-padding: 14px;
-} */
+.detail_maindiv table tbody {
+    background-color: rgb(224, 228, 234);
+    color: black;
+
+}
 .tableinfo{
     width: 100%;
 }

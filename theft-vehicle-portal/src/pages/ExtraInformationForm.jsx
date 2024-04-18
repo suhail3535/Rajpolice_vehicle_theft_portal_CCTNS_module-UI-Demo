@@ -198,12 +198,7 @@ const ExtraInfoRorm = () => {
                             <Input onChange={e => handleInputChange('आईडी कार्ड संख्या', e.target.value)} />
 
                         </Form.Item>
-
-
-
-
-
-                        <Form.Item
+                         <Form.Item
                             wrapperCol={{
                                 offset: 8,
                                 span: 16,
