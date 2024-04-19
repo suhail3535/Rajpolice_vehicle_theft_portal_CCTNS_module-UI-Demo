@@ -34,17 +34,17 @@ const Navbar = () => {
           </div>
         </div>
         <div className="ruler_bar">
-          <botton>मुख्य पृष्ठ   |</botton>
-          <botton>शिकायत   |</botton>
-          <botton>नागरिक सेवाएँ   |</botton>
-          <botton>खोज स्थिति   |</botton>
-          <botton>नागरिक जानकारी   |</botton>
-          <botton>देखें प्राथमिकी   |</botton>
-          <botton>स्थल का मानचित्र   |</botton>
-          <botton>अक्सर पूछे जाने वाले प्रश्न   |</botton>
-          <botton>नागरिक की प्रतिक्रिया   |</botton>
-          <botton>सिटीजन टिप   |</botton>
-          <botton>हमसे संपर्क करें   |</botton>
+          <button>मुख्य पृष्ठ   |</button>
+          <button>शिकायत   |</button>
+          <button>नागरिक सेवाएँ   |</button>
+          <button>खोज स्थिति   |</button>
+          <button>नागरिक जानकारी   |</button>
+          <button>देखें प्राथमिकी   |</button>
+          <button>स्थल का मानचित्र   |</button>
+          <button>अक्सर पूछे जाने वाले प्रश्न   |</button>
+          <button>नागरिक की प्रतिक्रिया   |</button>
+          <button>सिटीजन टिप   |</button>
+          <button>हमसे संपर्क करें   |</button>
         </div>
       </div>
     </>

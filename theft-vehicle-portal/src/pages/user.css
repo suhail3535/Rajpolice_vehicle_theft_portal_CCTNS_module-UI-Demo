@@ -88,14 +88,16 @@
             rgb(26, 10, 210) 94.3%);
     transition: all 0.6s ease-in-out;
 }
-.empty_btn{
+
+.empty_btn {
     width: 40%;
     margin: auto;
 
     /* border: 1px solid green; */
 }
-.empty_btn button{
-position: relative;
+
+.empty_btn button {
+    position: relative;
     overflow: hidden;
     height: 2.5rem;
     width: 50%;
@@ -107,6 +109,7 @@ position: relative;
     border: none;
     cursor: pointer;
 }
+
 .empty_btn button:hover::before {
     transform: scaleX(1);
 }
@@ -130,4 +133,77 @@ position: relative;
             rgb(231, 65, 4) 10.8%,
             rgb(241, 14, 44) 94.3%);
     transition: all 0.6s ease-in-out;
+}
+
+@media screen and (min-width:200px) and (max-width:420px) {
+    .button-content {
+        /* border: 1px solid green; */
+        width: 100%;
+    }
+
+    .empty_btn {
+        width: 100%;
+        margin: 10px auto;
+
+        /* border: 1px solid green; */
+    }
+
+    .btn_control {
+        width: 80%;
+        margin: auto;
+        display: block;
+        gap: 10px;
+        /* border: 1px solid red; */
+        margin-top: 50px;
+        justify-content: space-between;
+    }
+
+    .btn_control button {
+        width: 100%;
+        font-size: 10px;
+    }
+
+
+}
+@media screen and (min-width:421px) and (max-width:768px) {
+    .button-content {
+        /* border: 1px solid green; */
+        width: 100%;
+    }
+
+    .empty_btn {
+        width: 100%;
+        margin: 10px auto;
+
+        /* border: 1px solid green; */
+    }
+
+    .btn_control {
+        width: 80%;
+        margin: auto;
+        display: block;
+        gap: 10px;
+        /* border: 1px solid red; */
+        /* margin-top: 50px; */
+        justify-content: space-between;
+    }
+
+    .btn_control button {
+        width: 100%;
+        margin: 10px;
+        font-size: 12px;
+    }
+.tab_view {
+    /* border: 5px solid green; */
+    height: 500px;
+}
+        .scrollable-content {
+            border: 1px solid rgba(215, 213, 213, 0.782);
+            /* overflow-y: hidden; */
+            padding: 5px;
+            /* height: 500px; */
+            /* height: 100vh; */
+            /* padding-bottom: 50px; */
+
+        }
 }

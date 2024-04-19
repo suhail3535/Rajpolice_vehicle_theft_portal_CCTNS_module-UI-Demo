@@ -5,10 +5,12 @@ import "./table.css"
 import {
     DeleteOutlined
 } from '@ant-design/icons';
+import { ToastContainer, toast } from "react-toastify";
+
 import { useToast, Box } from '@chakra-ui/react'
 import { Button, Space, Checkbox, Alert, Modal, Select, Form, Input, Table } from 'antd';
 const ExtraInfoRorm = () => {
-    const toast = useToast()
+    // const toast = useToast()
     const [formData, setFormData] = useState({});
     const [upnamList, setUpnamList] = useState([]);
     const [deleteIndex, setDeleteIndex] = useState(null);
@@ -18,14 +20,8 @@ const ExtraInfoRorm = () => {
         const newUpnamList = [...upnamList, formData];
         setUpnamList(newUpnamList);
         setFormData("");
-        toast({
-            title: 'जानकारी सफलतापूर्वक जोड़ी गई !',
-            description: "",
-            status: 'success',
-            duration: 3000,
-            position: "top-center",
-            isClosable: true,
-        })
+        toast.success("जानकारी सफलतापूर्वक जोड़ी गई !");
+
 
 
     };

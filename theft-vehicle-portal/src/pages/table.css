@@ -35,11 +35,12 @@
 .detail_maindiv table tbody {
     background-color: rgb(224, 228, 234);
     color: black;
+    text-align: center;
 
 }
-.tableinfo{
+/* .tableinfo{
     width: 100%;
-}
+} */
 .table {
     border-radius: 5px;
     border-collapse: separate;

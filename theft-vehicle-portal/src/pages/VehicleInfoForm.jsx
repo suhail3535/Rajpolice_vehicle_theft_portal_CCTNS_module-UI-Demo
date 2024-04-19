@@ -6,9 +6,9 @@ import {
 } from '@ant-design/icons';
 import { useToast, Box } from '@chakra-ui/react'
 import { Button, Space, Checkbox, Alert, Modal, Select, Form, Input, Table } from 'antd';
-
+import { ToastContainer, toast } from "react-toastify";
 const VehicleInfoForm = () => {
-    const toast = useToast();
+    // const toast = useToast();
     const [formData1, setFormData1] = useState({});
     const [formData2, setFormData2] = useState({});
     const [upnamList, setUpnamList] = useState([]);
@@ -21,14 +21,10 @@ const VehicleInfoForm = () => {
         setUpnamList(newUpnamList);
         setFormData1({});
         setFormData2({});
-        toast({
-            title: 'जानकारी सफलतापूर्वक जोड़ी गई!',
-            description: "",
-            status: 'success',
-            duration: 3000,
-            position: "top-center",
-            isClosable: true,
-        });
+    
+        toast.success("जानकारी सफलतापूर्वक जोड़ी गई !");
+
+        // toast.success("Success Notification !");
     };
 
     const handleInputChange1 = (name, value) => {
@@ -385,7 +381,7 @@ const VehicleInfoForm = () => {
                 </div>
 
                 <Table
-                    
+
                     columns={columns} dataSource={upnamList.map((item, index) => ({ ...item, index }))} />
                 <Modal
                     title="Confirmation"

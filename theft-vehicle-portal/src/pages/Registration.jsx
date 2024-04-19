@@ -36,7 +36,7 @@ const Registration = () => {
                 <div style={{ textAlign: 'justify' }}>
                     <p>ई-एफआईआर की सुविधा मात्र वाहन चोरी की शिकायत दर्ज करने हेतु वैकल्पिक व्यवस्था के रूप में उपलब्ध करवाई गई हैं, बशर्ते कि :- (e-FIR facility has been provided as an alternative arrangement to lodge complaint regarding vehicle theft only,provided that:-)</p>
                     <p>
-                        <ol>
+                        <ol style={{marginLeft:"10px",marginBottoml:"10px"}}>
                             <li> मुल्जिम अज्ञात हो | (Accused is unknown)</li>
                             <li>घटना के दौरान चोट / बल प्रयोग नहीं हुआ हो |(No use of force/injury during incident).</li>
                         </ol>

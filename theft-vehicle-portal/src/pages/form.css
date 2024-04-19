@@ -8,74 +8,220 @@
     padding: 10px;
     grid-template-columns: repeat(2, 1fr);
 }
-.main_container_forms_drawer{
+
+.main_container_forms_drawer {
     display: flex;
-flex-direction: column;
+    flex-direction: column;
 }
-.form_label{
+
+.form_label {
     color: red;
     margin-bottom: 100px;
 }
-.reset_frm_btn{
-    width:13%;
+
+.reset_frm_btn {
+    width: 13%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     float: right;
 }
-.form1{
+
+.form1 {
     padding: 10px;
     width: 100%;
     border: 1px solid rgba(239, 239, 238, 0.935);
 }
 
-.label_form{
+.label_form {
     /* color: red; */
     font-size: 100px;
 }
-.model_msg{
+
+.model_msg {
     height: 300px;
     display: flex;
     text-align: center;
     flex-direction: column;
     /* gap: 10px; */
 }
-.model_msg h1{
+
+.model_msg h1 {
     margin-bottom: 1px;
     font-size: 30px;
     color: RGB(43 106 193);
 }
-.model_msgp{
+
+.model_msgp {
     height: 3px;
     margin-top: 0px;
     background-color: RGB(43 106 193);
 }
-.model_msg p{
+
+.model_msg p {
     font-size: 18px;
-    margin:15px 0px;
+    margin: 15px 0px;
     text-align: center;
 }
-.model_msg input{
-    width:200px;
+
+.model_msg input {
+    width: 200px;
     margin: 10px 0px;
 }
-.model_msg button{
+
+.model_msg button {
     padding: 10px;
     margin: 20px auto;
     width: 70%;
     border-radius: 20px;
     color: white;
     transition: all 0.5s ease-in-out;
-    background-color:rgb(53, 167, 133);
+    background-color: rgb(53, 167, 133);
 }
-.model_msg button:hover{
+
+.model_msg button:hover {
     cursor: pointer;
-    background-color: palevioletred;
+    background-color: RGB(43 106 193);
 }
-.data_delete p{
+
+.data_delete p {
 
     color: RGB(43 106 193);
     text-align: center;
     font-weight: bold;
     font-size: 15px;
+}
+
+.controlflex {
+    align-items: center;
+    display: flex;
+    width: "50%";
+
+    /* border: 1px solid teal; */
+}
+
+.aayu {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    /* gap: 20px; */
+    /* border: 1px solid green; */
+}
+
+.controlflex button {
+    margin-top: 20px;
+    padding-top: 5px;
+}
+
+.inputyear {
+    margin-top: 20px;
+    /* border: 1px solid greenyellow; */
+
+}
+
+.satya {
+    margin-top: 21px;
+}
+
+.saheje {
+    margin-top: 24px;
+}
+
+.stack {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+@media screen and (min-width:200px) and (max-width:420px) {
+    .main_container_forms {
+        width: 100%;
+        margin: auto;
+        /* border: 2px solid green; */
+        display: block;
+
+
+    }
+
+    .form1 {
+        padding: 10px;
+        /* width: 100%; */
+        border: 1px solid rgba(239, 239, 238, 0.935);
+    }
+
+    .stack {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .satya {
+        margin-top: 21px;
+        width: 80px;
+        margin: 10px auto;
+    }
+
+    .controlflex {
+        align-items: center;
+        display: block;
+        width: 100%;
+        /* border: 6px solid teal; */
+    }
+        .aayu {
+            display: block;
+            align-items: center;
+            width: 100%;
+            /* border: 1px solid green; */
+        }
+        .sematak{
+            width: 100%;
+            border: 1px solid red;
+        }
+}
+@media screen and (min-width:421px) and (max-width:768px) {
+    .main_container_forms {
+        width: 100%;
+        margin: auto;
+        /* border: 2px solid green; */
+        display: block;
+
+
+    }
+
+    .form1 {
+        padding: 10px;
+        /* width: 100%; */
+        border: 1px solid rgba(239, 239, 238, 0.935);
+    }
+
+    .stack {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .satya {
+        margin-top: 21px;
+        width: 80px;
+        margin: 10px auto;
+    }
+
+    .controlflex {
+        align-items: center;
+        display: block;
+        width: 100%;
+        /* border: 6px solid teal; */
+    }
+
+    .aayu {
+        display: block;
+        align-items: center;
+        width: 100%;
+        /* border: 1px solid green; */
+    }
+
+    .sematak {
+        width: 100%;
+        border: 1px solid red;
+    }
 }

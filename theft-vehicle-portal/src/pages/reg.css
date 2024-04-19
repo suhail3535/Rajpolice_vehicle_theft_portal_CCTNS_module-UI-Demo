@@ -11,8 +11,22 @@
     background-color: rgb(53, 167, 133);
     color: white;
     cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.agree_btn button:hover{
+    /* background-color: rgb(); */
+    background-color: RGB(43 106 193);
+    cursor: pointer;
 }
 p{
-    margin-top: 10px;
+    margin-top: 15px;
     text-align: justify;
+}
+@media screen and (min-width:200px) and (max-width:768px) {
+    .agree_btn {
+            width: 50%;
+            margin: 10px auto;
+            /* border: 2px solid green; */
+
+        }
 }

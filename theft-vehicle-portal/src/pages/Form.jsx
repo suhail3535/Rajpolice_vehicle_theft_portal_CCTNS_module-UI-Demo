@@ -141,13 +141,14 @@ const FormComponent = () => {
                 <p>सभी आंकड़े खाली हो जाएंगे, क्या आप जारी रखना चाहते हैं</p>
 
             </Modal>
+
             <div className='main_container_forms'>
                 <div className='form1'>
-                    <Stack spacing={2}>
+
                         <FormControl isRequired>
                             <FormLabel style={{ marginBottom: "0px",fontSize:"15px" }}>लिंग</FormLabel>
                             <Select placeholder='-----चयन-----' size='sm'>
-                                <option value="">-----चयन-----</option>
+                                {/* <option value="">-----चयन-----</option> */}
                                 <option value="">अज्ञात</option>
                                 <option value="">पुरुष</option>
                                 <option value="">महिला</option>
@@ -169,18 +170,18 @@ const FormComponent = () => {
                             <Input placeholder='First name' size='sm' />
                         </FormControl>
                         <Stack direction="row">
-                            <FormControl style={{ width: "420px" }}>
+                            <FormControl>
                                 <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>उपनाम</FormLabel>
                                 <Input type="text" size="sm" value={upnam} onChange={(e) => setUpnam(e.target.value)} />
                             </FormControl>
-                            <Button style={{ marginTop: "32px" }} colorScheme='blue' size='sm' onClick={handleAddUpnam}>सहेजे</Button>
+                        <Button className="saheje" colorScheme='blue' size='sm' onClick={handleAddUpnam}>सहेजे</Button>
                         </Stack>
                         <div className="detail_maindiv">
                             <table>
                                 <thead>
                                     <tr>
                                         <th>क्र.सं</th>
-                                        <th style={{ width: "450px" }}>उपनाम</th>
+                                        <th className='up'>उपनाम</th>
                                         <th>हटाएँ</th>
                                     </tr>
                                 </thead>
@@ -197,14 +198,13 @@ const FormComponent = () => {
                                 </tbody>
                             </table>
                         </div>
-                    </Stack>
+
                 </div>
                 <div className='form1'>
-                    <Stack spacing={2}>
+
                         <FormControl isRequired>
                             <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>वैवाहिक स्थिति</FormLabel>
                             <Select placeholder='-----चयन-----' size='sm'>
-                                {/* <option value="">-----चयन-----</option> */}
                                 <option value="">अलग- अलग</option>
                                 <option value="">अविवाहित</option>
                                 <option value="">तलाकशुदा</option>
@@ -213,8 +213,8 @@ const FormComponent = () => {
                                 <option value="">विवाहित</option>
                             </Select>
                         </FormControl>
-                        <Stack direction="row">
-                            <FormControl style={{ width: "380px" }}>
+                        <div className="stack">
+                            <FormControl >
                                 <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>
                                     मोबाईल नंबर
                                 </FormLabel>
@@ -230,10 +230,10 @@ const FormComponent = () => {
                                     />
                                 </InputGroup>
                             </FormControl>
-                            <Button style={{ marginTop: "32px" }} colorScheme='blue' width="100px" size='sm' onClick={showModal}>सत्यापित करें</Button>
-                        </Stack>
+                            <Button className="satya" colorScheme='blue'  size='sm' onClick={showModal}>सत्यापित करें</Button>
+                        </div>
                             {formErrors.mobile && <div style={{color:"red"}}>{formErrors.mobile}</div>}
-                        <FormControl style={{ width: "380px" }}>
+                        <FormControl >
                             <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>
                                 लैंडलाइन नंबर
                             </FormLabel>
@@ -242,8 +242,8 @@ const FormComponent = () => {
                                 <Input size='sm' type='tel' placeholder='phone number' />
                             </InputGroup>
                         </FormControl>
-                        <Stack direction="row">
-                            <FormControl style={{ width: "380px" }}>
+                        <div className='stack'>
+                            <FormControl >
                                 <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>
                                     ईमेल आईडी
                                 </FormLabel>
@@ -255,14 +255,14 @@ const FormComponent = () => {
                                     onChange={handleInputChange}
                                 />
                             </FormControl>
-                            <Button style={{ marginTop: "32px" }} colorScheme='blue' width="100px" size='sm' onClick={showModal2}>सत्यापित करें</Button>
-                        </Stack>
+                        <Button className="satya"  colorScheme='blue'  size='sm' onClick={showModal2}>सत्यापित करें</Button>
+                        </div>
                         {formErrors.email && <div style={{ color: "red" }}>{formErrors.email}</div>}
                         <Checkbox defaultChecked>क्या पीड़ित और शिकायतकर्ता एक ही हैं?</Checkbox>
-                    </Stack>
+
                 </div>
                 <div className='form1'>
-                    <Stack spacing={2}>
+
                         <FormControl isRequired>
                             <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>संबंध प्रकार</FormLabel>
                             <Select placeholder='-----चयन-----' size='sm'>
@@ -296,49 +296,44 @@ const FormComponent = () => {
                                 <option value="">सामान्य</option>
                             </Select>
                         </FormControl>
-                    </Stack>
+
                 </div>
                 <div className='form1'>
-                    <Stack spacing={2}>
+
                         <FormControl isRequired>
                             <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>
                                 जन्म तिथि</FormLabel>
                             <Input placeholder='Select Date and Time' size='sm' type='datetime-local' />
                         </FormControl>
-                        <Flex direction="row" width="270px" justifyContent="space-between" marginBottom={2}>
-                            <FormControl style={{ width: "380px" }}>
+                        <Flex className="aayu"  marginBottom={2}>
+                            <FormControl >
                                 <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>आयु (वर्ष/महीना)</FormLabel>
                                 <Input htmlSize={4} width='auto' size="sm" />
                             </FormControl>
-                            <FormControl style={{ width: "380px", marginTop: "31px" }}>
-                                <Input htmlSize={4} width='auto' size="sm" />
+                            <FormControl >
+                            <Input className="inputyear" htmlSize={4} width='auto' size="sm" />
                             </FormControl>
                         </Flex>
-
-
-
-
                         <FormControl>
                             <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>जन्म का वर्ष</FormLabel>
-                            <Input placeholder='First name' size='sm' />
+                        <Input placeholder='जन्म का वर्ष' size='sm' />
                         </FormControl>
 
-                        <Flex direction="row" width="500px" justifyContent="space-between" marginBottom={2}>
-                            <FormControl style={{ width: "450px" }}>
-                                <FormLabel style={{marginBottom:"0px",fontSize:"15px"}}>आयु सीमा(से - तक)</FormLabel>
-                                <Input htmlSize={4} width='auto' size="sm" />
+                        <div className="controlflex" >
+                            <FormControl >
+                                <FormLabel  style={{marginBottom:"0px",fontSize:"15px"}}>आयु सीमा(से - तक)</FormLabel>
+                            <Input htmlSize={6}  size="sm" />
                             </FormControl>
-                            <FormControl style={{ width: "380px", marginTop: "31px" }}>
-                                <Input htmlSize={4} width='auto' size="sm" />
+                            <FormControl className="inputyear" >
+                            <Input htmlSize={6} size="sm" />
                             </FormControl>
                             <FormControl>
-
-                                <Button style={{ marginTop: "32px", marginLeft: "130px" }} colorScheme='blue' size='sm' onClick={showModal3} >रीसेट करें</Button>
+                          <Button colorScheme='blue' size='sm' onClick={showModal3} >रीसेट करें</Button>
                             </FormControl>
 
-                        </Flex>
+                        </div>
 
-                    </Stack>
+
                 </div>
 
                 <div className='empty_btn'>
