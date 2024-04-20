@@ -99,17 +99,12 @@ const ExtraInfoRorm = () => {
         <>
 
             <div style={{ width: "100%" }}>
-                <div className='main_container_forms'>
+                <div className='main_container_forms_extrainfo'>
                     <Form
                         onFinish={handleFormSubmit}
                         name="basic"
-                        // layout="inline"
-                        labelCol={{
-                            flex: "0 0 200px", // Set a fixed width for label column
-                        }}
-                        wrapperCol={{
-                            flex: "1", // Allow wrapper column to take up remaining space
-                        }}
+                        // layout="vertical"
+
                         initialValues={{
                             remember: true,
                         }}
@@ -149,7 +144,7 @@ const ExtraInfoRorm = () => {
                             ]}
                         >
                             <Select
-                                placeholder="भारत"
+                                placeholder="----चयन----"
                                 onChange={value => handleInputChange('राष्ट्रीयता हेतु देश', value)}
                                 // onChange={onGenderChange}
                                 allowClear
@@ -191,7 +186,7 @@ const ExtraInfoRorm = () => {
                                 },
                             ]}
                         >
-                            <Input onChange={e => handleInputChange('आईडी कार्ड संख्या', e.target.value)} />
+                            <Input placeholder='आईडी कार्ड संख्‍या' onChange={e => handleInputChange('आईडी कार्ड संख्या', e.target.value)} />
 
                         </Form.Item>
                          <Form.Item
@@ -203,13 +198,14 @@ const ExtraInfoRorm = () => {
                             <Button type="primary" htmlType="submit">
                                 जोड़ें
                             </Button>
+                            <Button onClick={showModal} type="primary" htmlType="submit">
+                                रिक्त करें
+                            </Button>
                         </Form.Item>
                     </Form>
 
                 </div>
-                <div className="detail_maindiv">
 
-                </div>
                 <Table columns={columns} dataSource={upnamList.map((item, index) => ({ ...item, index }))} />
                 <Modal
                     title="Confirmation"

@@ -731,6 +731,7 @@ const AddressForm = () => {
                     </Button>
                 </div>
                 <Table
+                    
                     fontSize="10px"
                     columns={columns}
                     dataSource={upnamList.map((item, index) => ({ ...item, index }))}

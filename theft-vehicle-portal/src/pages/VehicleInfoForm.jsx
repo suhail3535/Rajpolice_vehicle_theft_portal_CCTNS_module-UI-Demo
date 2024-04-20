@@ -21,7 +21,7 @@ const VehicleInfoForm = () => {
         setUpnamList(newUpnamList);
         setFormData1({});
         setFormData2({});
-    
+
         toast.success("जानकारी सफलतापूर्वक जोड़ी गई !");
 
         // toast.success("Success Notification !");
@@ -138,12 +138,7 @@ const VehicleInfoForm = () => {
                         onFinish={handleFormSubmit}
                         name="basic"
                         // layout="inline"
-                        labelCol={{
-                            flex: "0 0 200px", // Set a fixed width for label column
-                        }}
-                        wrapperCol={{
-                            flex: "1", // Allow wrapper column to take up remaining space
-                        }}
+                        layout="vertical"
                         initialValues={{
                             remember: true,
                         }}
@@ -153,7 +148,7 @@ const VehicleInfoForm = () => {
 
 
                         <Form.Item
-                            style={{ marginBottom: "8px" }}
+                            style={{ marginBottom: "5px" }}
                             label="वाहन पंजीकरण संख्या "
                             name="वाहन-पंजीकरण-संख्या"
                             rules={[
@@ -167,7 +162,7 @@ const VehicleInfoForm = () => {
 
                         </Form.Item>
                         <Form.Item
-                            style={{ marginBottom: "8px" }}
+                            style={{ marginBottom: "5px" }}
                             label="रंग"
                             name="रंग"
                             rules={[
@@ -181,7 +176,7 @@ const VehicleInfoForm = () => {
 
                         </Form.Item>
                         <Form.Item
-                            style={{ marginBottom: "8px" }}
+                            style={{ marginBottom: "5px" }}
                             label="इंजन संख्या"
                             name="इंजन-संख्या"
                             rules={[
@@ -195,7 +190,7 @@ const VehicleInfoForm = () => {
 
                         </Form.Item>
                         <Form.Item
-                            style={{ marginBottom: "8px" }}
+                            style={{ marginBottom: "5px" }}
                             label="विवरण"
                             name="विवरण"
                             rules={[
@@ -240,12 +235,8 @@ const VehicleInfoForm = () => {
                         onFinish={handleFormSubmit}
                         name="basic"
                         // layout="inline"
-                        labelCol={{
-                            flex: "0 0 200px", // Set a fixed width for label column
-                        }}
-                        wrapperCol={{
-                            flex: "1", // Allow wrapper column to take up remaining space
-                        }}
+                        layout="vertical"
+
                         initialValues={{
                             remember: true,
                         }}
@@ -257,7 +248,7 @@ const VehicleInfoForm = () => {
 
 
                         <Form.Item
-                            style={{ marginBottom: "8px" }}
+                            style={{ marginBottom: "5px" }}
                             label="चेसिस नंबर"
                             name="चेसिस-नंबर"
                             rules={[
@@ -273,7 +264,7 @@ const VehicleInfoForm = () => {
 
                         <Form.Item
 
-                            style={{ marginBottom: "8px", }}
+                            style={{ marginBottom: "5px", }}
                             label="वाहन का प्रकार"
                             name="वाहन-का-प्रकार"
                             rules={[
@@ -296,7 +287,7 @@ const VehicleInfoForm = () => {
                         </Form.Item>
                         <Form.Item
 
-                            style={{ marginBottom: "8px", }}
+                            style={{ marginBottom: "5px", }}
                             label="निर्माता"
                             name="निर्माता"
                             rules={[
@@ -319,7 +310,7 @@ const VehicleInfoForm = () => {
                         </Form.Item>
                         <Form.Item
 
-                            style={{ marginBottom: "8px", }}
+                            style={{ marginBottom: "5px", }}
                             label="निर्माण वर्ष"
                             name="निर्माण-वर्ष"
                             rules={[
@@ -342,7 +333,7 @@ const VehicleInfoForm = () => {
                         </Form.Item>
                         <Form.Item
 
-                            style={{ marginBottom: "8px", }}
+                            style={{ marginBottom: "5px", }}
                             label="मॉडल"
                             name="मॉडल"
                             rules={[

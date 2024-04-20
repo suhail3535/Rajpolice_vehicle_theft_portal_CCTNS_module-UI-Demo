@@ -8,6 +8,30 @@
     padding: 10px;
     grid-template-columns: repeat(2, 1fr);
 }
+.main_container_forms_extrainfo {
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    /* border: 2px solid rgb(0, 2, 128); */
+    margin-bottom: 10px;
+
+
+}
+.main_container_forms_crime{
+    width: 100%;
+}
+.newadd{
+    width: 10%;
+    margin:30px auto;
+    /* border: 1px solid green; */
+    text-align: center;
+}
+.newadd button{
+    background-color: rgb(24, 144, 255);
+    width: 90%;
+    columns: white;
+    padding-top: 5px;
+}
 
 .main_container_forms_drawer {
     display: flex;
@@ -20,11 +44,13 @@
 }
 
 .reset_frm_btn {
-    width: 13%;
+    width: 15%;
     display: flex;
+    margin: auto;
     justify-content: space-between;
     margin-bottom: 20px;
-    float: right;
+    /* float: right; */
+
 }
 
 .form1 {
@@ -135,6 +161,36 @@
 
 }
 
+.form_location{
+    /* border: 2px solid rgb(148, 152, 148); */
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* padding: 30px; */
+}
+.form_location textarea{
+    /* border: 2px solid yellowgreen; */
+    margin-top: -20px;
+}
+.ghatna{
+    border: 1px dotted gainsboro;
+    width: 98%;
+    padding: 5px;
+    margin: auto;
+}
+.ghatna p{
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.crime_info{
+    /* border: 1px solid green; */
+    display: flex;
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+    /* padding: 10px; */
+}
 @media screen and (min-width:200px) and (max-width:420px) {
     .main_container_forms {
         width: 100%;
@@ -144,7 +200,15 @@
 
 
     }
+.main_container_forms_extrainfo {
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+    /* border: 2px solid rgb(0, 2, 128); */
+    margin-bottom: 10px;
 
+
+}
     .form1 {
         padding: 10px;
         /* width: 100%; */
@@ -176,8 +240,12 @@
         }
         .sematak{
             width: 100%;
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
+                .reset_frm_btn {
+                    width: 60%;
+
+                }
 }
 @media screen and (min-width:421px) and (max-width:768px) {
     .main_container_forms {
@@ -188,6 +256,15 @@
 
 
     }
+        .main_container_forms_extrainfo {
+            width: 100%;
+            margin: auto;
+            padding: 10px;
+            /* border: 2px solid rgb(0, 2, 128); */
+            margin-bottom: 10px;
+
+
+        }
 
     .form1 {
         padding: 10px;
@@ -222,6 +299,6 @@
 
     .sematak {
         width: 100%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 }

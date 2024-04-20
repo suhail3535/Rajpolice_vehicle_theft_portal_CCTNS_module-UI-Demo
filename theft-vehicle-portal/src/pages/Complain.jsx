@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 // import { Button } from '@chakra-ui/react'; // Assuming you're using Chakra UI Button
 import "./table.css";
 import "./form.css";
+import { Button, Space, Checkbox, Alert, Modal, Select, Form, Input, Table } from 'antd';
+import { ToastContainer, toast } from "react-toastify";
 import {
   DeleteOutlined,
   EditOutlined
 } from '@ant-design/icons';
-import { Space, Button, Modal, Drawer } from 'antd';
+import {  Drawer } from 'antd';
+import UsercompTabs from './UsercompTabs';
 const Complain = () => {
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [deleteIndex, setDeleteIndex] = useState(null);
@@ -49,19 +52,20 @@ const Complain = () => {
 
 
   return (
-    <div style={{ width: "100%", border: "1px solid green" }}>
-      <Drawer width={500} title="Edit Deatails" onClose={onClose} open={open}>
-        <div className='main_container_forms_drawer'>
+    <div style={{ width: "100%"}}>
+      <Drawer width={"80%"} title="Edit Deatails" onClose={onClose} open={open}>
+        {/* <div className='main_container_forms_drawer'> */}
+
+        <UsercompTabs/>
 
 
-
-        </div>
-      </Drawer>
+  </Drawer>
       <div className="detail_maindiv">
         <table>
           <thead style={{fontWeight:"bold"}}>
             <tr>
               <th>क्र.सं</th>
+
               <th style={{ width: "800px" }}>नाम</th>
               <th>पता</th>
               <th>संशोधित करें/ देखें</th>
