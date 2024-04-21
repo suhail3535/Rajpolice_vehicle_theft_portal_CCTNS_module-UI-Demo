@@ -8,6 +8,7 @@
     padding: 10px;
     grid-template-columns: repeat(2, 1fr);
 }
+
 .main_container_forms_extrainfo {
     width: 50%;
     margin: auto;
@@ -17,16 +18,19 @@
 
 
 }
-.main_container_forms_crime{
+
+.main_container_forms_crime {
     width: 100%;
 }
-.newadd{
+
+.newadd {
     width: 10%;
-    margin:30px auto;
+    margin: 30px auto;
     /* border: 1px solid green; */
     text-align: center;
 }
-.newadd button{
+
+.newadd button {
     background-color: rgb(24, 144, 255);
     width: 90%;
     columns: white;
@@ -161,36 +165,142 @@
 
 }
 
-.form_location{
+.form_location {
     /* border: 2px solid rgb(148, 152, 148); */
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     /* padding: 30px; */
 }
-.form_location textarea{
+
+.form_location textarea {
     /* border: 2px solid yellowgreen; */
-    margin-top: -20px;
+    /* margin-top: -20px; */
 }
-.ghatna{
+
+.ghatna {
     border: 1px dotted gainsboro;
     width: 98%;
     padding: 5px;
     margin: auto;
 }
-.ghatna p{
+
+.ghatna p {
     margin-left: 15px;
     font-size: 15px;
     font-weight: bold;
+    color: blueviolet;
 }
 
-.crime_info{
+.crime_info {
     /* border: 1px solid green; */
     display: flex;
+    justify-content: space-between;
     width: 100%;
     padding: 5px;
+    text-align: center;
+    /*
+     */
     margin: auto;
     /* padding: 10px; */
 }
+
+.crime_info_date {
+    width: 100%;
+    /* border: 1px solid green; */
+}
+
+.ghatna_place {
+
+    border: 1px dotted gainsboro;
+    width: 98%;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+.ghatna_place p {
+    margin-left: 15px;
+    font-size: 15px;
+    color: blueviolet;
+    font-weight: bold;
+
+}
+
+.crime_info2 {
+    /* border: 1px solid green; */
+    display: flex;
+    width: 100%;
+    padding-top: 5px;
+    justify-content: space-between;
+    margin: auto;
+    /* padding: 10px; */
+}
+
+.crime_info3 {
+    /* border: 1px solid green; */
+    /* display: flex; */
+    width: 100%;
+    padding: 5px;
+    justify-content: space-between;
+    margin: auto;
+    /* padding: 10px; */
+}
+
+.control_btn_div {
+    width: 70%;
+    /* border: 1px solid teal; */
+    margin: 20px auto;
+    text-align: center;
+}
+
+.mark_loaction {
+    width: 98%;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid gainsboro;
+}
+
+.mark_loaction img {
+    width: 20%;
+    cursor: pointer;
+}
+
+.main_container_forms_vehi {
+    /* border: 1px solid red; */
+    width: 70%;
+    /* margin-bottom: 20px; */
+    margin: auto;
+}
+
+.vehi_form {
+    border: 1px dotted gainsboro;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+.vehiinput {
+    /* border: 1px solid rgb(17, 128, 0); */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+    gap: 20px;
+    margin: auto;
+}
+
+/*  */
+.item {
+
+    /* border: 1px solid rgb(0, 255, 187); */
+    width: 50%;
+}
+
+.add {
+    width: 20%;
+    margin: 30px auto;
+}
+
 @media screen and (min-width:200px) and (max-width:420px) {
     .main_container_forms {
         width: 100%;
@@ -200,19 +310,56 @@
 
 
     }
-.main_container_forms_extrainfo {
-    width: 100%;
-    margin: auto;
-    padding: 10px;
-    /* border: 2px solid rgb(0, 2, 128); */
-    margin-bottom: 10px;
+
+    .main_container_forms_extrainfo {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        /* border: 2px solid rgb(0, 2, 128); */
+        margin-bottom: 10px;
 
 
-}
+    }
+
     .form1 {
         padding: 10px;
         /* width: 100%; */
         border: 1px solid rgba(239, 239, 238, 0.935);
+    }
+
+    .crime_info {
+
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+    }
+
+    .crime_info2 {
+
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+    }
+
+    .mark_loaction {
+        width: 90%;
+        margin: auto;
+        border: 1px solid gainsboro;
+    }
+
+    .mark_loaction img {
+        width: 50%;
+        cursor: pointer;
+        margin: auto;
+    }
+
+    .control_btn_div {
+        width: 100%;
+        /* border: 1px solid teal; */
+        margin: 20px auto;
+        text-align: center;
     }
 
     .stack {
@@ -232,21 +379,63 @@
         width: 100%;
         /* border: 6px solid teal; */
     }
-        .aayu {
-            display: block;
-            align-items: center;
-            width: 100%;
-            /* border: 1px solid green; */
-        }
-        .sematak{
-            width: 100%;
-            /* border: 1px solid red; */
-        }
-                .reset_frm_btn {
-                    width: 60%;
 
-                }
+    .aayu {
+        display: block;
+        align-items: center;
+        width: 100%;
+        /* border: 1px solid green; */
+    }
+
+    .sematak {
+        width: 100%;
+        /* border: 1px solid red; */
+    }
+
+    .reset_frm_btn {
+        width: 60%;
+
+    }
+
+
+    .main_container_forms_vehi {
+        /* border: 1px solid red; */
+        width: 100%;
+        /* margin-bottom: 20px; */
+        margin: auto;
+    }
+
+    .vehi_form {
+        border: 1px dotted gainsboro;
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .vehiinput {
+        /* border: 1px solid rgb(17, 128, 0); */
+        display: block;
+        /* justify-content: space-between; */
+        width: 100%;
+        padding: 5px;
+        gap: 20px;
+        margin: auto;
+    }
+
+    /*  */
+    .item {
+
+        /* border: 1px solid rgb(0, 255, 187); */
+        width: 90%;
+        margin: auto;
+    }
+
+    .add {
+        width: 60%;
+        margin: 30px auto;
+    }
 }
+
 @media screen and (min-width:421px) and (max-width:768px) {
     .main_container_forms {
         width: 100%;
@@ -256,15 +445,60 @@
 
 
     }
-        .main_container_forms_extrainfo {
-            width: 100%;
-            margin: auto;
-            padding: 10px;
-            /* border: 2px solid rgb(0, 2, 128); */
-            margin-bottom: 10px;
+.main_container_forms_vehi {
+    /* border: 1px solid red; */
+    width: 100%;
+    /* margin-bottom: 20px; */
+    margin: auto;
+}
+
+.vehi_form {
+    border: 1px dotted gainsboro;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+}
+
+.vehiinput {
+    /* border: 1px solid rgb(17, 128, 0); */
+    display: block;
+    /* justify-content: space-between; */
+    width: 100%;
+    padding: 5px;
+    gap: 20px;
+    margin: auto;
+}
+
+/*  */
+.item {
+
+    /* border: 1px solid rgb(0, 255, 187); */
+    width: 90%;
+    margin: auto;
+}
+
+.add {
+    width: 40%;
+    margin: 30px auto;
+}
+.add button{
+    width: 100%;
+}
+    .mark_loaction img {
+        width: 30%;
+        cursor: pointer;
+        margin: auto;
+    }
+
+    .main_container_forms_extrainfo {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        /* border: 2px solid rgb(0, 2, 128); */
+        margin-bottom: 10px;
 
 
-        }
+    }
 
     .form1 {
         padding: 10px;
