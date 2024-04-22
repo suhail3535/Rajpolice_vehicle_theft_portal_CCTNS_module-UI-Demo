@@ -7,6 +7,19 @@ import { Button, Select, Form, Input, Table, Modal, Space } from 'antd';
 import { ToastContainer, toast } from "react-toastify";
 
 const VehicleInfoForm = () => {
+    const [searchValue, setSearchValue] = useState('');
+    const [data, setData] = useState({
+        id: '',
+        name: '',
+        age: ''
+    });
+    const [loading, setLoading] = useState(false);
+    const [tableData, setTableData] = useState([]);
+    const [showTable, setShowTable] = useState(false);
+
+
+
+
     const [formData, setFormData] = useState({});
     const [upnamList, setUpnamList] = useState([]);
     const [deleteIndex, setDeleteIndex] = useState(null);
@@ -43,6 +56,42 @@ const VehicleInfoForm = () => {
         setDeleteIndex(null);
         setConfirmDelete(false);
     };
+
+
+    const handleSearch = () => {
+        setLoading(true);
+
+        // Simulating API call with setTimeout
+        setTimeout(() => {
+            // Sample data
+            const sampleData = [
+                { id: '1', name: 'John', age: '25' },
+                { id: '2', name: 'Alice', age: '30' },
+                { id: '3', name: 'Bob', age: '40' }
+            ];
+
+            const foundData = sampleData.find(item => item.id === searchValue);
+            if (foundData) {
+                setData(foundData);
+            } else {
+                alert('No data found for the given ID');
+            }
+
+            setLoading(false);
+        }, 1000);
+    };
+    const handleReset = () => {
+        setSearchValue('');
+        setData({
+            id: '',
+            name: '',
+            age: ''
+        });
+    };
+
+
+
+
 
     const columns = [
         {
@@ -123,6 +172,21 @@ const VehicleInfoForm = () => {
                         }}
                         autoComplete="off"
                     >
+                        <Form.Item label="Enter ID">
+                            <Input
+                                value={searchValue}
+                                onChange={e => setSearchValue(e.target.value)}
+                                placeholder="Enter ID"
+                            />
+                        </Form.Item>
+                        <Form.Item>
+                            <Button type="primary" onClick={handleSearch} loading={loading}>
+                                Search
+                            </Button>
+                            <Button style={{ marginLeft: '10px' }} onClick={handleReset}>
+                                Reset
+                            </Button>
+                        </Form.Item>
                         <div className='vehiinput'>
                             <Form.Item
                                 className='item'

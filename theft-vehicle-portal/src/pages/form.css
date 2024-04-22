@@ -266,10 +266,12 @@
 }
 
 .main_container_forms_vehi {
-    /* border: 1px solid red; */
-    width: 70%;
+    border: 1px solid gainsboro;
+    /* border: 10px solid red; */
+    width: 90%;
     /* margin-bottom: 20px; */
     margin: auto;
+    padding: 10px;
 }
 
 .vehi_form {
@@ -301,6 +303,22 @@
     margin: 30px auto;
 }
 
+.vehiinput1{
+    /* border: 1px
+    padsolid red; */
+    display: flex;
+    padding: 10px;
+
+}
+.itembtn{
+    width: 30%;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid yellow; */
+}
+
 @media screen and (min-width:200px) and (max-width:420px) {
     .main_container_forms {
         width: 100%;
@@ -310,7 +328,22 @@
 
 
     }
+.vehiinput1 {
+    /* border: 1px */
+    /* solid red; */
+    display: block;
+    padding: 10px;
 
+}
+
+.itembtn {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 2px solid yellow; */
+}
     .main_container_forms_extrainfo {
         width: 100%;
         margin: auto;
@@ -445,6 +478,24 @@
 
 
     }
+        .vehiinput1 {
+            /* border: 1px solid red; */
+            display: flex;
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+
+
+        }
+
+        .itembtn {
+            width: 100%;
+            display: flex;
+            margin-top: 60px;
+            align-items: center;
+            justify-content: space-evenly;
+            /* border: 2px solid yellow; */
+        }
 .main_container_forms_vehi {
     /* border: 1px solid red; */
     width: 100%;

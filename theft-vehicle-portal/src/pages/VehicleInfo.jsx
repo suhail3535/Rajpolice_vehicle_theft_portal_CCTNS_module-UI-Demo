@@ -1,10 +1,10 @@
 import React from 'react'
-import VehicleInfoForm from './VehicleInfoForm'
+import VehicleForm from './VehicleForm'
 
 const VehicleInfo = () => {
     return (
         <div className='huminfo_div' >
-            <VehicleInfoForm/>
+            <VehicleForm/>
         </div>
     )
 }
