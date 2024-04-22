@@ -204,7 +204,8 @@ const VehicleForm = () => {
             const foundData = sampleData.find(item => item.regNumber === searchValue);
             if (foundData) {
                 setData(foundData);
-                toast.success("जानकारी सफलतापूर्वक जोड़ी गई !");
+                toast.success("जानकारी सफलता पूर्वक खोजी गई!");
+;
                 console.log(foundData);
             } else {
                 toast.error("जानकारी मौजूद नहीं है !");
@@ -246,7 +247,7 @@ const VehicleForm = () => {
         }
 
         setTableData([...tableData, data]);
-        toast.success("जानकारी सफलतापूर्वक जोड़ी गई !");
+        toast.success("जानकारी सफलता पूर्वक जोड़ी गई!" );
         handleReset()
     };
 
