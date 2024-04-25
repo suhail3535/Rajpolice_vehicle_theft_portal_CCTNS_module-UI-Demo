@@ -192,7 +192,14 @@ const AddressForm = () => {
                     {/* <-------------code conversition----------> */}
                     <div className="form1">
 
-
+                        <Form
+                            name="combinedForm"
+                            layout="vertical"
+                            initialValues={{
+                                remember: true,
+                            }}
+                            autoComplete="off"
+                        >
                         <Form.Item
                             style={{ marginBottom: "8px" }}
                             label="मकान सं "
@@ -305,11 +312,18 @@ const AddressForm = () => {
                             <Checkbox style={{ marginLeft: "10px" }}>नहीं</Checkbox>
                         </FormControl>
 
-
+                        </Form>
                     </div>
 
                     <div className="form1">
-
+                        <Form
+                            name="combinedForm"
+                            layout="vertical"
+                            initialValues={{
+                                remember: true,
+                            }}
+                            autoComplete="off"
+                        >
                         <Form.Item
                             style={{ marginBottom: "8px" }}
                             label="देश"
@@ -455,7 +469,7 @@ const AddressForm = () => {
                             />
                         </Form.Item>
 
-
+                        </Form>
                     </div>
                 </div>
                 <p style={{ fontWeight: "bold", margin: "10px 10px 0px 10px" }}>
@@ -463,256 +477,287 @@ const AddressForm = () => {
                 </p>
 
                 <div className="main_container_forms">
+                    {/* <-------------code conversition----------> */}
                     <div className="form1">
 
-                        <Form.Item
-                            style={{ marginBottom: "8px" }}
-                            label="मकान सं "
-                            name="मकान सं"
-                            rules={[
-                                {
-                                    // required: true,
-                                    message: "Please input your ID card number!",
-                                },
-                            ]}
+                        <Form
+                            name="combinedForm"
+                            layout="vertical"
+                            initialValues={{
+                                remember: true,
+                            }}
+                            autoComplete="off"
                         >
-                            <Input
-                                name="houseNumber"
-                                value={formData.houseNumber}
-                                onChange={handleInputChange}
-                                placeholder="मकान सं"
-                                size="sm"
-                            />
-                        </Form.Item>
+                            <Form.Item
+                                style={{ marginBottom: "8px" }}
+                                label="मकान सं "
+                                name="मकान सं"
+                                rules={[
+                                    {
+                                        // required: true,
+                                        message: "Please input your ID card number!",
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    name="houseNumber"
+                                    value={formData.houseNumber}
+                                    onChange={handleInputChange}
+                                    placeholder="मकान सं"
+                                    size="sm"
+                                />
+                            </Form.Item>
 
 
 
-                        <Form.Item
-                            style={{ marginBottom: "8px" }}
-                            label="गली का नाम "
-                            name="गली का नाम"
-                            rules={[
-                                {
-                                    // required: true,
-                                    message: "Please input your ID card number!",
-                                },
-                            ]}
-                        >
-                            <Input
-                                name="streetName"
-                                value={formData.streetName}
-                                onChange={handleInputChange}
-                                placeholder="गली का नाम"
-                                size="sm"
-                            />
-                        </Form.Item>
+                            <Form.Item
+                                style={{ marginBottom: "8px" }}
+                                label="गली का नाम "
+                                name="गली का नाम"
+                                rules={[
+                                    {
+                                        // required: true,
+                                        message: "Please input your ID card number!",
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    name="streetName"
+                                    value={formData.streetName}
+                                    onChange={handleInputChange}
+                                    placeholder="गली का नाम"
+                                    size="sm"
+                                />
+                            </Form.Item>
 
-                        <Form.Item
-                            style={{ marginBottom: "8px" }}
-                            label="कॉलोनी / इलाक़ा /क्षेत्र "
-                            name="कॉलोनी / इलाक़ा /क्षेत्र"
-                            rules={[
-                                {
-                                    // required: true,
-                                    message: "Please input your ID card number!",
-                                },
-                            ]}
-                        >
-                            <Input
-                                name="colonyAreaRegion"
-                                value={formData.colonyAreaRegion}
-                                onChange={handleInputChange}
-                                placeholder="कॉलोनी / इलाक़ा /क्षेत्र"
-                                size="sm"
-                            />
-                        </Form.Item>
+                            <Form.Item
+                                style={{ marginBottom: "8px" }}
+                                label="कॉलोनी / इलाक़ा /क्षेत्र "
+                                name="कॉलोनी / इलाक़ा /क्षेत्र"
+                                rules={[
+                                    {
+                                        // required: true,
+                                        message: "Please input your ID card number!",
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    name="colonyAreaRegion"
+                                    value={formData.colonyAreaRegion}
+                                    onChange={handleInputChange}
+                                    placeholder="कॉलोनी / इलाक़ा /क्षेत्र"
+                                    size="sm"
+                                />
+                            </Form.Item>
 
-                        <Form.Item
-                            style={{ marginBottom: "8px" }}
-                            label="ग्राम / नगर / शहर"
-                            name="ग्राम / नगर / शहर"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: "Please input your ID card number!",
-                                },
-                            ]}
-                        >
-                            <Input
-                                name="villageCityTown"
-                                value={formData.villageCityTown}
-                                onChange={handleInputChange}
-                                placeholder="ग्राम / नगर / शहर"
-                                size="sm"
-                            />
-                        </Form.Item>
+                            <Form.Item
+                                style={{ marginBottom: "8px" }}
+                                label="ग्राम / नगर / शहर"
+                                name="ग्राम / नगर / शहर"
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: "Please input your ID card number!",
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    name="villageCityTown"
+                                    value={formData.villageCityTown}
+                                    onChange={handleInputChange}
+                                    placeholder="ग्राम / नगर / शहर"
+                                    size="sm"
+                                />
+                            </Form.Item>
 
-                        <Form.Item
-                            style={{ marginBottom: "8px" }}
-                            label="तहसील / ब्लॉक / मंडल"
-                            name="तहसील / ब्लॉक / मंडल"
-                            rules={[
-                                {
-                                    // required: true,
-                                    message: "Please input your ID card number!",
-                                },
-                            ]}
-                        >
-                            <Input
-                                name="tehsilBlockMandal"
-                                value={formData.tehsilBlockManda}
-                                onChange={handleInputChange}
-                                placeholder="तहसील / ब्लॉक / मंडल"
-                                size="sm"
-                            />
-                        </Form.Item>
+                            <Form.Item
+                                style={{ marginBottom: "8px" }}
+                                label="तहसील / ब्लॉक / मंडल"
+                                name="तहसील / ब्लॉक / मंडल"
+                                rules={[
+                                    {
+                                        // required: true,
+                                        message: "Please input your ID card number!",
+                                    },
+                                ]}
+                            >
+                                <Input
+                                    name="tehsilBlockMandal"
+                                    value={formData.tehsilBlockManda}
+                                    onChange={handleInputChange}
+                                    placeholder="तहसील / ब्लॉक / मंडल"
+                                    size="sm"
+                                />
+                            </Form.Item>
 
+                            <FormControl isRequired>
+                                <FormLabel>वर्तमान पता</FormLabel>
+                                <span style={{ marginRight: "10px", fontWeight: "bold" }}>
+                                    {" "}
+                                    वर्तमान के लिए भी वही
+                                </span>
+                                <Checkbox>हां</Checkbox>
+                                <Checkbox style={{ marginLeft: "10px" }}>नहीं</Checkbox>
+                            </FormControl>
+
+                        </Form>
                     </div>
 
                     <div className="form1">
-
-                        <Form.Item
-                            style={{ marginBottom: "8px" }}
-                            label="    देश"
-                            name="    देश"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: "Please input your business!",
-                                },
-                            ]}
+                        <Form
+                            name="combinedForm"
+                            layout="vertical"
+                            initialValues={{
+                                remember: true,
+                            }}
+                            autoComplete="off"
                         >
-                            <Select
-                                // placeholder="----चयन----"
+                            <Form.Item
+                                style={{ marginBottom: "8px" }}
+                                label="देश"
                                 name="country"
-                                value={formData.country}
-                                onChange={handleInputChange}
-                                placeholder="भारत"
-                                // onChange={onGenderChange}
-                                allowClear
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: "Please input your business!",
+                                    },
+                                ]}
                             >
-                                <option value="भारत">भारत</option>
-                            </Select>
-                        </Form.Item>
+                                <Select
+                                    // placeholder="----चयन----"
+                                    name="country"
+                                    value={formData.country}
+                                    onChange={(value) => handleInputChange({ target: { name: "country", value } })}
+
+                                    placeholder="भारत"
+                                    // onChange={onGenderChange}
+                                    allowClear
+                                >
+                                    <option value=""> -----चयन-----</option>
+                                    <option value="भारत">भारत</option>
+                                    {/* <option value="भारत">भ</option> */}
+                                </Select>
+                            </Form.Item>
 
 
-
-                        <Form.Item
-                            style={{ marginBottom: "8px" }}
-                            label="राज्य"
-                            name="राज्य"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: "Please input your business!",
-                                },
-                            ]}
-                        >
-                            <Select
-                                // placeholder="----चयन----"
+                            <Form.Item
+                                style={{ marginBottom: "8px" }}
+                                label="राज्य"
                                 name="state"
-                                value={formData.state}
-                                onChange={handleInputChange}
-                                placeholder="राजस्थान"
-                                // onChange={onGenderChange}
-                                allowClear
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: "Please select a state!",
+                                    },
+                                ]}
                             >
-                                <option value="राजस्थान">राजस्थान</option>
-                                <option value="दिल्ली">दिल्ली</option>
-                                <option value="महाराष्ट्र">महाराष्ट्र</option>
-                                <option value="उत्तर प्रदेश">उत्तर प्रदेश</option>
-                                <option value="केरल">केरल</option>
-                            </Select>
-                        </Form.Item>
+                                <Select
+                                    value={formData.state}
+                                    onChange={(value) => handleInputChange({ target: { name: "state", value } })}
+                                    placeholder="राजस्थान"
+                                    allowClear
+                                >
+                                    <Option value="राजस्थान">राजस्थान</Option>
+                                    <Option value="दिल्ली">दिल्ली</Option>
+                                    <Option value="महाराष्ट्र">महाराष्ट्र</Option>
+                                    <Option value="उत्तर प्रदेश">उत्तर प्रदेश</Option>
+                                    <Option value="केरल">केरल</Option>
+                                </Select>
+                            </Form.Item>
 
 
 
 
-                        <Form.Item
-                            style={{ marginBottom: "8px" }}
-                            label="जिला"
-                            name="जिला"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: "Please input your business!",
-                                },
-                            ]}
-                        >
-                            <Select
-                                // placeholder="----चयन----"
+
+                            <Form.Item
+                                style={{ marginBottom: "8px" }}
+                                label="जिला"
                                 name="district"
-                                value={formData.district}
-                                onChange={handleInputChange}
-                                placeholder="डीग"
-                                // onChange={onGenderChange}
-                                allowClear
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: "Please input your business!",
+                                    },
+                                ]}
                             >
-                                <option value="डीग">डीग</option>
-                                <option value="डीडवाना-कुचामन">डीडवाना-कुचामन</option>
-                                <option value="डूंगरपूर">डूंगरपूर</option>
-                                <option value="दूदू">दूदू</option>
-                                <option value="दौसा">दौसा</option>
-                                <option value="धौलपुर">धौलपुर</option>
-                            </Select>
-                        </Form.Item>
+                                <Select
+                                    // placeholder="----चयन----"
+                                    name="district"
+                                    value={formData.district}
+                                    onChange={(value) => handleInputChange({ target: { name: "district", value } })}
+
+                                    placeholder=" -----चयन-----"
+                                    // onChange={onGenderChange}
+                                    allowClear
+                                >
+                                    <option value="डीग">डीग</option>
+                                    <option value="डीडवाना-कुचामन">डीडवाना-कुचामन</option>
+                                    <option value="डूंगरपूर">डूंगरपूर</option>
+                                    <option value="दूदू">दूदू</option>
+                                    <option value="दौसा">दौसा</option>
+                                    <option value="धौलपुर">धौलपुर</option>
+                                </Select>
+                            </Form.Item>
 
 
-                        <Form.Item
-                            style={{ marginBottom: "8px" }}
-                            label="पुलिस स्टेशन"
-                            name="पुलिस स्टेशन"
-                            rules={[
-                                {
-                                    // required: true,
-                                    message: "Please input your business!",
-                                },
-                            ]}
-                        >
-                            <Select
-                                // placeholder="----चयन----"
+                            <Form.Item
+                                style={{ marginBottom: "8px" }}
+                                label="पुलिस स्टेशन"
                                 name="policeStation"
-                                value={formData.policeStation}
-                                onChange={handleInputChange}
-                                placeholder="भरतपुर"
-                                // onChange={onGenderChange}
-                                allowClear
+                                rules={[
+                                    {
+                                        // required: true,
+                                        message: "Please input your business!",
+                                    },
+                                ]}
                             >
-                                <option value="भरतपुर">भरतपुर</option>
-                                <option value="भिवाड़ी">भिवाड़ी</option>
-                                <option value="भीलवाड़ा">भीलवाड़ा</option>
-                                <option value="शासकीय रेलवे पुलिस जोधपुर">
-                                    शासकीय रेलवे पुलिस जोधपुर
-                                </option>
-                                <option value="शासकीय रेलवे पुलिस, अजमेर">
-                                    शासकीय रेलवे पुलिस, अजमेर
-                                </option>
-                                <option value="शाहपुरा">शाहपुरा</option>
-                                <option value="सलूम्&zwj;बर">सलूम्&zwj;बर</option>
-                            </Select>
-                        </Form.Item>
+                                <Select
+                                    // placeholder="----चयन----"
+                                    name="policeStation"
+                                    value={formData.policeStation}
+                                    onChange={(value) => handleInputChange({ target: { name: "policeStation", value } })}
 
-                        <Form.Item
-                            style={{ marginBottom: "8px" }}
-                            label="पिन कोड"
-                            name="pinCode"
-                            rules={[
-                                {
-                                    required: true,
-                                    message: "Please input your business!",
-                                },
-                            ]}
-                        >
+                                    placeholder=" -----चयन-----"
+                                    // onChange={onGenderChange}
+                                    allowClear
+                                >
+                                    <option value="भरतपुर">भरतपुर</option>
+                                    <option value="भिवाड़ी">भिवाड़ी</option>
+                                    <option value="भीलवाड़ा">भीलवाड़ा</option>
+                                    <option value="शासकीय रेलवे पुलिस जोधपुर">
+                                        शासकीय रेलवे पुलिस जोधपुर
+                                    </option>
+                                    <option value="शासकीय रेलवे पुलिस, अजमेर">
+                                        शासकीय रेलवे पुलिस, अजमेर
+                                    </option>
+                                    <option value="शाहपुरा">शाहपुरा</option>
+                                    <option value="सलूम्&zwj;बर">सलूम्&zwj;बर</option>
+                                </Select>
+                            </Form.Item>
 
-                            <Input
+
+                            <Form.Item
+                                style={{ marginBottom: "8px" }}
+                                label="पिन कोड"
                                 name="pinCode"
-                                value={formData.pinCode}
-                                onChange={handleInputChange}
-                                placeholder="पिन कोड"
-                                size="sm"
-                            />
-                        </Form.Item>
+                                rules={[
+                                    {
+                                        required: true,
+                                        message: "Please input your business!",
+                                    },
+                                ]}
+                            >
 
+                                <Input
+                                    name="pinCode"
+                                    value={formData.pinCode}
+                                    onChange={handleInputChange}
+                                    placeholder="पिन कोड"
+                                    size="sm"
+                                />
+                            </Form.Item>
+
+                        </Form>
                     </div>
                 </div>
                 <div></div>
@@ -731,7 +776,7 @@ const AddressForm = () => {
                     </Button>
                 </div>
                 <Table
-                    
+
                     fontSize="10px"
                     columns={columns}
                     dataSource={upnamList.map((item, index) => ({ ...item, index }))}

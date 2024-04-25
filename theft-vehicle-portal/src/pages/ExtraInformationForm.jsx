@@ -103,7 +103,7 @@ const ExtraInfoRorm = () => {
                     <Form
                         onFinish={handleFormSubmit}
                         name="basic"
-                        // layout="vertical"
+                        layout="vertical"
 
                         initialValues={{
                             remember: true,

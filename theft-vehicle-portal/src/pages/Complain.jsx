@@ -27,11 +27,7 @@ const Complain = () => {
     }
   ]);
 
-  // const handleDelete = (index) => {
-  //   const updatedList = [...upnamList];
-  //   updatedList.splice(index, 1);
-  //   setUpnamList(updatedList);
-  // };
+
   const showModal = (index) => {
     setDeleteIndex(index);
     setConfirmDelete(true);
@@ -53,7 +49,7 @@ const Complain = () => {
 
   return (
     <div style={{ width: "100%"}}>
-      <Drawer width={"80%"} title="Edit Deatails" onClose={onClose} open={open}>
+      <Drawer width={"60%"} title="Edit Deatails" onClose={onClose} open={open}>
         {/* <div className='main_container_forms_drawer'> */}
 
         <UsercompTabs/>

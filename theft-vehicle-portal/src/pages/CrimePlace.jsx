@@ -294,7 +294,7 @@ const CrimePlace = () => {
                             </div>
 
                             <div className='mark_loaction'>
-                                
+
                                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_I986zAYG21Ht5nYhbBKDYmj9ihoPTmVmXzDjXjO66A&s" alt="" />
                             </div>
                             <div className='control_btn_div'>
